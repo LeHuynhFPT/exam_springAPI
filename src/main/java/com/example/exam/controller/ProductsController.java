@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("products")
+@RequestMapping("\products")
 public class ProductsController {
     @Autowired
     private ProductService productService;
-    @GetMapping("getallproducts")
+    @GetMapping("\getallproducts")
     public String getAll(ModelMap modelMap){
         String view="listproducts";
         try{
